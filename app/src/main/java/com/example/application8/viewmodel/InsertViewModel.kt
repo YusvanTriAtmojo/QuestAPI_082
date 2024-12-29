@@ -3,6 +3,10 @@ package com.example.application8.viewmodel
 class InsertViewModel {
 }
 
+data class InsertUiState(
+    val insertUiEvent: InsertUiEvent = InsertUiEvent()
+)
+
 data class InsertUiEvent(
     val nim: String = "",
     val nama: String = "",
