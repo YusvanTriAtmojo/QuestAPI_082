@@ -21,10 +21,16 @@ import androidx.compose.ui.input.nestedscroll.nestedScroll
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.application8.ui.customwidget.CostomeTopAppBar
+import com.example.application8.ui.navigation.DestinasiNavigasi
 import com.example.application8.ui.viewmodel.InsertUiEvent
 import com.example.application8.ui.viewmodel.InsertUiState
 import com.example.application8.ui.viewmodel.InsertViewModel
 import kotlinx.coroutines.launch
+
+object DestinasiEntry : DestinasiNavigasi {
+    override val route = "item_entry"
+    override val titleRes = "Entry Mhs"
+}
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
