@@ -1,5 +1,7 @@
 package com.example.application8.viewmodel
 
+import com.example.application8.model.Mahasiswa
+
 class InsertViewModel {
 }
 
@@ -14,4 +16,13 @@ data class InsertUiEvent(
     val jensiKelamin: String = "",
     val kelas: String = "",
     val angkatan: String = "",
+)
+
+fun InsertUiEvent.toMhs(): Mahasiswa = Mahasiswa(
+    nim = nim,
+    nama = nama,
+    alamat = alamat,
+    jenisKelamin = jensiKelamin,
+    kelas = kelas,
+    angkatan = angkatan,
 )
