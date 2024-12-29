@@ -39,8 +39,14 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.application8.R
 import com.example.application8.model.Mahasiswa
 import com.example.application8.ui.customwidget.CostomeTopAppBar
+import com.example.application8.ui.navigation.DestinasiNavigasi
 import com.example.application8.ui.viewmodel.HomeUiState
 import com.example.application8.ui.viewmodel.HomeViewModel
+
+object DestinasiHome : DestinasiNavigasi{
+    override val route = "home"
+    override val titleRes = "Home Mhs"
+}
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
