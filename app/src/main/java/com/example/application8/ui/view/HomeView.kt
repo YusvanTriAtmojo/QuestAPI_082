@@ -38,7 +38,7 @@ import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.application8.R
 import com.example.application8.model.Mahasiswa
-import com.example.application8.ui.customwidget.CostomeTopAppBar
+import com.example.application8.ui.customwidget.CostumeTopAppBar
 import com.example.application8.ui.navigation.DestinasiNavigasi
 import com.example.application8.ui.viewmodel.HomeUiState
 import com.example.application8.ui.viewmodel.HomeViewModel
@@ -61,7 +61,7 @@ fun HomeScreen(
     Scaffold(
         modifier = modifier.nestedScroll(scrollBehavior.nestedScrollConnection),
         topBar = {
-            CostomeTopAppBar(
+            CostumeTopAppBar(
                 title = DestinasiHome.titleRes,
                 canNavigateBack = false,
                 scrollBehavior = scrollBehavior,
