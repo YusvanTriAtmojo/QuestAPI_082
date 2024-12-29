@@ -26,3 +26,12 @@ fun InsertUiEvent.toMhs(): Mahasiswa = Mahasiswa(
     kelas = kelas,
     angkatan = angkatan,
 )
+
+fun Mahasiswa.toInsertUiEvent(): InsertUiEvent = InsertUiEvent(
+    nim = nim,
+    nama = nama,
+    alamat = alamat,
+    jensiKelamin = jenisKelamin,
+    kelas = kelas,
+    angkatan = angkatan,
+)
