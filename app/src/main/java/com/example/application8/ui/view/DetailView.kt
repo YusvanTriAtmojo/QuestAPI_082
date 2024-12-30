@@ -26,8 +26,16 @@ import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.application8.model.Mahasiswa
 import com.example.application8.ui.customwidget.CostumeTopAppBar
+import com.example.application8.ui.navigation.DestinasiNavigasi
 import com.example.application8.ui.viewmodel.DetailViewModel
 import com.example.application8.ui.viewmodel.PenyediaViewModel
+
+
+object DestinasiDetail : DestinasiNavigasi {
+    override val route = "detail/{nim}"
+    override val titleRes = "Detail Mahasiswa"
+}
+
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
