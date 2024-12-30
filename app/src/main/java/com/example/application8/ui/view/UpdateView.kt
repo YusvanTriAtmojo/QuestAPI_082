@@ -16,12 +16,20 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.input.nestedscroll.nestedScroll
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.application8.ui.customwidget.CostumeTopAppBar
+import com.example.application8.ui.navigation.DestinasiNavigasi
 import com.example.application8.ui.viewmodel.PenyediaViewModel
 import com.example.application8.ui.viewmodel.UpdateViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+
+object DestinasiUpdate : DestinasiNavigasi {
+    override val route = "edit/{nim}"
+    override val titleRes = "Edit Mahasiswa"
+    const val NIM = "nim"
+}
+
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
